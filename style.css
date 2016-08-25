@@ -1,0 +1,34 @@
+:root {
+  --salmon: #f0834c
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  line-height: 150%;
+}
+
+a {
+  color: var(--salmon);
+}
+
+section {
+  max-width: 600px;
+  padding: 2em 30px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--salmon);
+  color: white;
+  padding-top: 2em;
+}
+
+main > section {
+  box-shadow: 0 1px 3px gray;
+  margin-top: -4em;
+  background-color: white;
+}
+
+footer {
+  color: gray;
+}
