@@ -13,6 +13,11 @@ a {
   color: var(--orange);
 }
 
+h1 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 h1, h2 {
   font-family: 'Baloo Tamma', cursive;
   line-height: 100%;
@@ -51,4 +56,8 @@ main > section:first-child {
 
 footer {
   color: gray;
+}
+
+.instructions li {
+  padding-bottom: 2rem;
 }
