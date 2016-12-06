@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Node Todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <meta property="og:title" content="Node Todo Getting Started">
+    <meta property="og:description" content="Getting started contributing to Node.js.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://nodetodo.org/getting-started/">
+  </head>
+  <body>
+    <header>
+      <section>
+        <h1><a href="/">Node Todo</a></h1>
+        <p>
+          Free and public gatherings for people that want to contribute to Node.js.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <h2>Getting Started</h2>
+        <ul class="instructions">
+          <li>If you don't already have one, <a href="https://github.com/join">create a GitHub account</a></li>
+
+          <li>Open the <a href="https://github.com/nodejs/node">Node.js core repository</a> (<a href="https://github.com/nodejs/node">https://github.com/nodejs/node</a>)</li>
+          <li>Use the "Fork" button to fork the repository:
+            <img src="zfork.png" alt="" style="max-width:100%;">
+          </li>
+
+          <li>On the page <em>for your own fork</em>, use the "Clone or download" button and copy the URL for cloning to your clipboard:
+
+            <img src="zclone.png" alt="" style="max-width:100%;">
+          </li>
+
+          <li>On the command line, in your home directory or a directory you have for projects, run:
+
+            <tt>git clone &lt;paste that URL here!&gt;</tt>
+          </li>
+
+          <li>When that is done:
+            <tt>cd node</tt>
+          </li>
+
+          <li>Then:
+
+            <tt>git remote add upstream https://github.com/nodejs/node.git</tt>
+          </li>
+
+          <li>Follow <a href="https://github.com/nodejs/node/blob/master/BUILDING.md">the instructions to build Node.js</a> (<a href="https://github.com/nodejs/node/blob/master/BUILDING.md">https://github.com/nodejs/node/blob/master/BUILDING.md</a>).</li>
+
+          <li>You should not install the version of Node.js built with these instructions. Follow the instructions to build and test. Stop at any instructions on installing it in a system directory. For example, do <strong>not</strong> run <code>make install</code>.</li>
+
+          <li>Email <a href="mailto:help@nodetodo.org">help@nodetodo.org</a> or tweet at <a href="https://twitter.com/NodeTodo">@NodeTodo</a> to get a good first contribution to work on or to get help with any of the above steps.</li>
+        </ul>
+      </section>
+
+
+    </main>
+
+    <footer>
+      <section>
+        This website is open source and you can fork it <a
+          href="https://github.com/Trott/nodetodo">on GitHub</a>.
+        The website is based on the <a href="https://github.com/mikeal/dogpatchjs">DogpatchJS website code</a>.
+      </section>
+    </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83911391-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
