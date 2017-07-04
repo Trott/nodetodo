@@ -1,3 +1,5 @@
 # Node Todo
 
-Website for weekly informal Node.js contribution meetup.
+Website to assist people in getting started with Node.js core contributions.
+
+http://nodetodo.org/
