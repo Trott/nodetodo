@@ -65,6 +65,19 @@
             <blockquote><code>git remote add upstream https://github.com/nodejs/node.git</code></blockquote>
           </li>
 
+          <li>Optional, but recommended: Configure `git` so that it knows who
+              you are:
+
+              <blockquote><code>git config --global user.name "&lt;Your Name Here!&gt;"</code></blockquote>
+              <blockquote><code>git config --global user.email "&lt;Your Email Address Here!&gt;"</code></blockquote>
+
+              Make sure your email address is also added to your
+              <a href="https://github.com/settings/emails">GitHub email list</a>
+              so that your commits will be properly associated with your account
+              and you will be promoted to Contributor once your first commit is
+              landed!
+          </li>
+
           <li>Follow <a href="https://github.com/nodejs/node/blob/master/BUILDING.md">the instructions to build Node.js</a>. You should not install the version of Node.js built with these instructions. Follow the instructions to build and test only. Once you have `make test` or `vcbuild test` running successfully, you can stop and come back here.</li>
 
           <li>If you have not already done so, set git to use the name and email address you would like your commits to be credited to.<blockquote><code>git config --global user.name "J. Q. User"<br>git config --global user.email "j.q.user@example.com"</code></blockquote></li>
