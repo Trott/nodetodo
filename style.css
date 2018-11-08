@@ -58,6 +58,6 @@ footer {
   color: gray;
 }
 
-.instructions li {
+.instructions > li {
   padding-bottom: 2rem;
 }
