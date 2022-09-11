@@ -1,5 +1,5 @@
 :root {
-  --orange: #f0834c;
+  --brown: #973A0C;
   --charcoal: #1c1c1c;
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  color: var(--orange);
+  color: var(--brown);
 }
 
 h1 a {
@@ -39,7 +39,7 @@ section, div {
 }
 
 header {
-  background-color: var(--orange);
+  background-color: var(--brown);
   color: white;
   padding-top: 2em;
 }
@@ -63,5 +63,5 @@ footer {
 }
 
 code {
-  background-color: grey;
+  background-color: lightgrey;
 }
