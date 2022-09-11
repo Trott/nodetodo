@@ -6,44 +6,94 @@
     <title>Node Todo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma%7COpen+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <meta property="og:title" content="Node Todo">
-    <meta property="og:description" content="Node Todo will guide you through your first contribution to Node.js core. As long as you've worked a little bit with Node.js, you can do this!">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <meta property="og:title" content="Node Todo Getting Started">
+    <meta property="og:description" content="Getting started contributing to Node.js.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://nodetodo.org/">
+    <meta property="og:url" content="http://nodetodo.org/getting-started/">
   </head>
   <body>
     <header>
       <section>
-        <h1>Node Todo</h1>
+        <h1><a href="..">Node Todo</a></h1>
       </section>
     </header>
 
     <main>
-      <section>
-        <h2>Quick Start</h2>
+      <!-- <section>
+        <h2>Hiatus Until October 15 2018</h2>
         <p>
-          Follow the steps in our <a href="getting-started/">Getting Started Guide</a>!
+          Thanks for your interest in NodeTodo!
         </p>
-      </section>
+        <p>
+          The people who run NodeTodo are busy preparing for a Node.js Foundation
+          Code + Learn event in October 2018! So NodeTodo is on hiatus until then!
+        </p>
+        <p>
+          Please check back after October 15 2018 and we'll help you then!
+        </p>
+        <p>
+          Thanks and sorry for any inconvenience!
+        </p>
+      </section> -->
+      <section>
+        <h2>Getting Started</h2>
+        <ul class="instructions">
+          <li>You will need <code>git</code>. If you do not have it installed, <a href="https://git-scm.com/downloads">download it</a> and install it. (Windows users should select <a href="./zgitinstall.png">the option to use Unix tools from the command line</a>.)</li>
 
-      <section>
-        <h2>What is Node Todo?</h2>
-        <p>
-          Node Todo will guide you through your first contribution to Node.js core. As long as you've worked a little bit with Node.js, you can do this!
-        </p>
-        <p>
-          Node Todo is a fully volunteer effort independent of the Node.js project.
-        </p>
+          <li>If you don't already have one, <a href="https://github.com/join">create a GitHub account</a>.</li>
+
+          <li>Open the <a href="https://github.com/nodejs/node">Node.js core repository web page</a>.</li>
+          <li>Use the "Fork" button to fork the repository:
+            <img src="zfork.png" alt="" style="max-width:100%;">
+          </li>
+
+          <li>On the page <em>for your own fork</em>, use the "Clone or download" button and copy the URL for cloning to your clipboard:
+
+            <img src="zclone.png" alt="" style="max-width:100%;">
+          </li>
+
+          <li>On the command line, in your home directory or a directory you have for projects, run:
+
+            <blockquote><code>git clone &lt;paste that URL here!&gt;</code></blockquote>
+          </li>
+
+          <li>When that is done:
+            <blockquote><code>cd node</code></blockquote>
+          </li>
+
+          <li>Then:
+
+            <blockquote><code>git remote add upstream https://github.com/nodejs/node.git</code></blockquote>
+          </li>
+
+          <li>Optional, but recommended: Configure `git` so that it knows who
+              you are:
+
+              <blockquote><code>git config user.name "&lt;Your Name Here!&gt;"</code></blockquote>
+              <blockquote><code>git config user.email "&lt;Your Email Address Here!&gt;"</code></blockquote>
+
+              Make sure your email address is also added to your
+              <a href="https://github.com/settings/emails">GitHub email list</a>
+              so that your commits will be properly associated with your account
+              and you will be promoted to Contributor once your first commit is
+              landed!
+          </li>
+
+          <li>Follow <a href="https://github.com/nodejs/node/blob/main/BUILDING.md">the instructions to build Node.js</a>. You should not install the version of Node.js built with these instructions. Follow the instructions to build and test only. Once you have `make test` or `vcbuild test` running successfully, you can stop and come back here.</li>
+
+          <li>If all your tests passed, you can look at the <a href="../next-steps/">Next Steps</a> page for suggestions on ways to find issues to work on. If you have tests that are failing, try to figure out why that is. If you need help, search/use the <a href="https://github.com/nodejs/node/issues">Node.js issue tracker</a>.</li>
+
+        </ul>
       </section>
     </main>
 
     <footer>
-      <div>
+      <section>
         This website is open source and you can fork it <a
           href="https://github.com/Trott/nodetodo">on GitHub</a>.
         The website is based on the <a href="https://github.com/mikeal/dogpatchjs">DogpatchJS website code</a>.
-      </div>
+      </section>
     </footer>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
