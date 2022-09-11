@@ -61,3 +61,7 @@ footer {
 .instructions > li {
   padding-bottom: 2rem;
 }
+
+code {
+  background-color: grey;
+}
