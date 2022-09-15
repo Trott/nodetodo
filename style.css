@@ -24,7 +24,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 0;
 }
 
@@ -41,7 +41,6 @@ section, div {
 header {
   background-color: var(--brown);
   color: white;
-  padding-top: 2em;
 }
 
 main > section {
