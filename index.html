@@ -6,7 +6,7 @@
     <title>Getting Started With Node.js Core Development</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma%7COpen+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <meta property="og:title" content="Node Todo Getting Started">
     <meta property="og:description" content="Getting started contributing to Node.js.">
     <meta property="og:type" content="website">
@@ -48,9 +48,13 @@
             <img src="zfork.png" alt="" style="max-width:100%;">
           </li>
 
-          <li>On the page <em>for your own fork</em>, use the "Clone or download" button and copy the URL for cloning to your clipboard:
+          <li>On the page <em>for your own fork</em>, use the "Code" button and copy the URL for cloning to your clipboard:
 
             <img src="zclone.png" alt="" style="max-width:100%;">
+          </li>
+
+          <li>
+            Recommendation: Use the <code>SSH</code> URL within the "Code" modal. Username and password authentication via <code>HTTPS</code> is <a href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">no longer supported</a>, and you won't notice until you try to commit your local code back to the fork. Refer to the <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh">SSH documentation on GitHub</a> if you need help setting this up.
           </li>
 
           <li>On the command line, in your home directory or a directory you have for projects, run:
@@ -62,9 +66,9 @@
             <blockquote><code>cd node</code></blockquote>
           </li>
 
-          <li>Then:
+          <li>Then (if using <code>SSH</code> as recommended):
 
-            <blockquote><code>git remote add upstream https://github.com/nodejs/node.git</code></blockquote>
+            <blockquote><code>git remote add upstream git@github.com:nodejs/node.git</code></blockquote>
           </li>
 
           <li>Optional, but recommended: Configure `git` so that it knows who
