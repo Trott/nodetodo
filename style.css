@@ -1,5 +1,6 @@
 :root {
   --green: #5FA04E;
+  --green-link: #417E38;
   --app-bg: #F6F7F9;
   --app-text: #0D121C;
   --code-bg: #D9E1E4;
@@ -8,6 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root{
+    --green-link: #99CC7D;
     --app-bg: #0D121C;
     --app-text: #F6F7F9;
     --code-bg: #2C3437;
@@ -23,7 +25,7 @@ body {
 }
 
 a {
-  color: var(--green);
+  color: var(--green-link);
 }
 
 a:hover {
