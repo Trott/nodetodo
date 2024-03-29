@@ -1,16 +1,33 @@
 :root {
-  --brown: #973A0C;
-  --charcoal: #1c1c1c;
+  --green: #5FA04E;
+  --app-bg: #F6F7F9;
+  --app-text: #0D121C;
+  --code-bg: #D9E1E4;
+  --code-text: #2C3437;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --app-bg: #0D121C;
+    --app-text: #F6F7F9;
+    --code-bg: #2C3437;
+    --code-text: #D9E1E4;
+  }
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 150%;
-  color: var(--charcoal);
+  color: var(--app-text);
+  background-color: var(--app-bg);
 }
 
 a {
-  color: var(--brown);
+  color: var(--green);
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1 a {
@@ -39,7 +56,7 @@ section, div {
 }
 
 header {
-  background-color: var(--brown);
+  background-color: var(--green);
   color: white;
 }
 
@@ -47,6 +64,8 @@ main > section {
   box-shadow: 0 1px 3px gray;
   background-color: white;
   margin-top: 2em;
+  background-color: var(--app-bg);
+  color: var(--app-text);
 }
 
 main > section:first-child {
@@ -62,5 +81,7 @@ footer {
 }
 
 code {
-  background-color: lightgrey;
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 2px 4px
 }
