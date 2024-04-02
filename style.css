@@ -74,10 +74,6 @@ main > section:first-child {
   margin-top: -2em;
 }
 
-footer {
-  color: gray;
-}
-
 .instructions > li {
   padding-bottom: 2rem;
 }
